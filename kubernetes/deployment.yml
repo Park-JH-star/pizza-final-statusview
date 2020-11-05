@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: statusView
-          image: admin20.azurecr.io/statusView:latest
+          image: admin20registry.azurecr.io/statusView:latest
           ports:
             - containerPort: 8080
           readinessProbe:
