@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: statusView
+  name: statusview
   labels:
-    app: statusView
+    app: statusview
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: statusView
+    app: statusview

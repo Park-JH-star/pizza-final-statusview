@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: statusView
+  name: statusview
   labels:
-    app: statusView
+    app: statusview
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: statusView
+      app: statusview
   template:
     metadata:
       labels:
-        app: statusView
+        app: statusview
     spec:
       containers:
-        - name: statusView
-          image: admin20registry.azurecr.io/statusView:latest
+        - name: statusview
+          image: admin20registry.azurecr.io/statusview:latest
           ports:
             - containerPort: 8080
           readinessProbe:
